@@ -14,9 +14,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TrashCanFileChecker {
     private final ServerServiceImpl serverServiceImpl;
-    @Scheduled(fixedDelay = 100000)
+    @Scheduled(fixedDelay = 10000)
     public void check(){
-        System.out.println("GİRDİMS");
+        System.out.println("Yenilendi");
         List<UserDto> userlist= serverServiceImpl.getUsers();
         int i=0;
         while (i<userlist.size()) {
