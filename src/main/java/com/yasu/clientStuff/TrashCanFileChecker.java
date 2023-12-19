@@ -16,7 +16,7 @@ public class TrashCanFileChecker {
     private final ServerServiceImpl serverServiceImpl;
     @Scheduled(fixedDelay = 10000)
     public void check(){
-        System.out.println("Yenilendi");
+        System.out.println("Kontrol edildi.");
         List<UserDto> userlist= serverServiceImpl.getUsers();
         int i=0;
         while (i<userlist.size()) {
